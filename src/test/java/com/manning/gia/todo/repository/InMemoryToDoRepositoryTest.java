@@ -88,7 +88,7 @@ public class InMemoryToDoRepositoryTest {
 
     @Test
     public void testDeleteToDoItem() {
-        //ToDoItem toDoItem = new ToDoItem();
+        ToDoItem toDoItem = new ToDoItem();
         toDoItem.setName("Write unit tests");
         inMemoryToDoRepository.insert(toDoItem);
         List<ToDoItem> toDoItems = inMemoryToDoRepository.findAll();
